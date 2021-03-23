@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Game</h1>
+    
+    <p>
+      Welcome to the Light and Sound Game! Repeat back the pattern by pressing the button associated with the sound.
+      <br> Easy Mode: 3 strikes and it's slow!
+      <br> Medium Mode: 2 strikes and it's decently paced.
+      <br> Hard Mode: 1 strike and lol good luck.
+    </p>
+    
+    
+    <!-- buttons down below -->
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <button id="volumeUp" onclick="increaseVolume()">Volume Up</button>
+    <button id="volumeDown" onclick="decreaseVolume()">Volume Down</button>
+    <button id="buttoneasy" onclick="setMode('easy')">Easy</button>
+    <button id="buttonmedium" onclick="setMode('medium')">Medium</button>
+    <button id="buttonhard" onclick="setMode('hard')">Hard</button>
+    
+    <div id="gameButtonArea" >
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+    </div>
+    
+    <!-- audios -->
+    <audio src="https://cdn.glitch.com/f3da0b8c-8d28-49fa-8884-7b7302c7a4ff%2Fwaa.mp3?v=1616472362796" id="waa"></audio>
+    <audio src="https://cdn.glitch.com/f3da0b8c-8d28-49fa-8884-7b7302c7a4ff%2Fwario.mp3?v=1616473936479" id="wario"></audio>
+    <audio src="https://cdn.glitch.com/f3da0b8c-8d28-49fa-8884-7b7302c7a4ff%2Fdisc.mp3?v=1616474201743" id="disc"></audio>
+    <audio src="https://cdn.glitch.com/f3da0b8c-8d28-49fa-8884-7b7302c7a4ff%2Fcar.mp3?v=1616472362651" id="car"></audio>
+    
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
