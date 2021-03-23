@@ -1,0 +1,89 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: slategrey;
+  color: white;
+}
+
+h1 {
+  font-style: italic;
+  color: #fff;
+  font-family: verdana, arial, sans-serif;
+}
+
+button{
+  padding: 25px; /* change to be dynamic */
+  border-radius: 0.5vh;
+}
+
+#gameButtonArea > button {
+  width: 30vh;
+  height: 30vh;
+  margin: 1vh;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen;
+}
+
+#button1:active, #button1.lit {
+  background-image: url("https://cdn.glitch.com/f3da0b8c-8d28-49fa-8884-7b7302c7a4ff%2Fbutton1.jpg?v=1616471178783");
+  background: green;
+}
+
+#button2 {
+  background: lightblue;
+}
+
+#button2:active, #button2.lit {
+  background-image: url("/assets/button2.jpg");
+  background: blue;
+}
+
+#button3 {
+  background: pink;
+}
+
+#button3:active, #button3.lit {
+  background-image: url("/assets/button3.jpg");
+  background: red;
+}
+
+#button4 {
+  background: lightyellow;
+}
+
+#button4:active, #button4.lit {
+  background-image: url("/assets/button4.jpg");
+  background: yellow;
+}
+
+#buttoneasy {
+  background: #DEFFFD;
+}
+
+#buttoneasy:active,#buttoneasy.lit {
+  background: #71FFF4;
+}
+
+#buttonmedium {
+  background: #FEFEE9;
+}
+
+#buttonmedium:active,#buttonmedium.lit {
+  background: #FFFF71;
+}
+
+#buttonhard {
+  background: #FF7171;
+}
+
+#buttonhard:active, #buttonhard.lit {
+  background: red;
+}
